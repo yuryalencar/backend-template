@@ -1,8 +1,8 @@
 Funções utilitárias: Armazene funções utilitárias reutilizáveis que podem ser usadas em diferentes partes do seu código.
 
-Example of the code for utils/dateUtils.js:
+Example of the code for utils/dateUtils.ts:
 ```
-const getCurrentDate = () => new Date().toISOString();
+const getCurrentDate = (): string => new Date().toISOString();
 
-module.exports = { getCurrentDate };
+export { getCurrentDate };
 ```

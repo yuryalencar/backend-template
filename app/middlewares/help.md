@@ -1,8 +1,10 @@
 middlewares: Armazene os middlewares do seu aplicativo aqui. Isso inclui middlewares para autenticação, autorização, manipulação de erros, entre outros.
 
-Example of the code for app/middlewares/authentication.js:
+Example of the code for app/middlewares/authentication.ts:
 ```
-const authenticate = (req, res, next) => {
+import { Request, Response, NextFunction } from 'express';
+
+const authenticate = (req: Request, res: Response, next: NextFunction) => {
   // Implement authentication logic here
   if (req.headers.authorization === 'Bearer <token>') {
     next();
@@ -11,5 +13,5 @@ const authenticate = (req, res, next) => {
   }
 };
 
-module.exports = { authenticate };
+export { authenticate };
 ```

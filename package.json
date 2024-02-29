@@ -4,16 +4,18 @@
   "description": "Example of backend project",
   "main": "index.js",
   "scripts": {
-    "start:prod": "pm2 start app --name backend-template-project",
-    "dev:clean": "nodemon app/index.js",
-    "dev": "pnpm db:migrate && nodemon app/index.js",
+    "build": "rimraf ./build && tsc",
+    "start:dev": "nodemon",
+    "start:dev:full": "pnpm db:migrate && nodemon app/index.js",
     "db:create": "npx sequelize-cli db:create",
     "db:migrate": "npx sequelize-cli db:migrate",
+    "db:seed": "npx sequelize-cli db:seed --seed",
     "db:seed:all": "npx sequelize-cli db:seed:all",
-    "db:restart": "npm run db:migrate && npm run db:seed:all",
-    "db:seed": "npx sequelize-cli db:seed --seed"
+    "db:restart": "pnpm run db:migrate && pnpm run db:seed:all",
+    "start:prod": "pnpm run build && node build/index.js",
+    "start:prod:server": "pm2 start build --name backend-template-project"
   },
-  "keywords": ["sequelize", "nodejs", "express", "vitest"],
+  "keywords": ["sequelize", "nodejs", "express", "vitest", "typescript"],
   "author": "Yury Alencar",
   "license": "MIT",
   "dependencies": {
@@ -27,8 +29,12 @@
     "sequelize-cli": "^6.6.1"
   },
   "devDependencies": {
+    "@types/node": "^20.11.23",
     "@vitest/coverage-v8": "^1.3.1",
     "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
     "vitest": "^1.3.1"
   }
 }

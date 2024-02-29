@@ -1,9 +1,9 @@
 tests: Mantenha os testes da sua aplicação neste diretório. Use estruturas como Mocha, Jest ou outros frameworks de teste para organizar e executar seus testes.
 
-Example of the code for app/tests/user.test.js:
+Example of the code for app/tests/user.test.ts:
 ```
-const request = require('supertest');
-const app = require('../app'); // Assuming your app is configured in this file
+import request from 'supertest';
+import app from '../app'; // Assuming your app is configured in this file
 
 describe('User Endpoints', () => {
   it('should get all users', async () => {

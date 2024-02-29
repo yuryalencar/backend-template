@@ -1,1 +1,0 @@
-seeders: Se necessário, inclua scripts de semeadura para popular o banco de dados com dados iniciais.

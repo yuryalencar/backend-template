@@ -1,6 +1,6 @@
 Constantes do aplicativo: Armazene constantes que são usadas em várias partes do código, como códigos de status HTTP, mensagens de erro, etc.
 
-Example of the code for config/appConfig.js:
+Example of the code for config/appConfig.ts:
 ```
 const appConfig = {
   port: process.env.PORT || 3000,
@@ -8,5 +8,5 @@ const appConfig = {
   // Add other application-specific configurations here
 };
 
-module.exports = appConfig;
+export default appConfig;
 ```

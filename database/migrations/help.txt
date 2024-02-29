@@ -1,1 +1,0 @@
-migrations: Mantenha os arquivos de migração do banco de dados aqui para gerenciar as alterações no esquema do banco de dados.

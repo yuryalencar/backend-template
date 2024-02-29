@@ -1,1 +1,0 @@
-models: Defina os modelos de dados do seu aplicativo aqui, que geralmente correspondem às tabelas do banco de dados.

@@ -1,1 +1,0 @@
-repositories: Implemente os repositórios de dados, que lidam com a interação direta com o banco de dados.

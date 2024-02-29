@@ -1,6 +1,6 @@
 Armazene constantes que são usadas em várias partes do código. Isso pode incluir códigos de status HTTP, mensagens de erro, etc.
 
-Example of the code for constants/httpStatus.js:
+Example of the code for constants/httpStatus.ts:
 ```
 const HTTP_STATUS = {
   OK: 200,
@@ -9,5 +9,5 @@ const HTTP_STATUS = {
   // Add more HTTP status codes as needed
 };
 
-module.exports = HTTP_STATUS;
+export default HTTP_STATUS;
 ```

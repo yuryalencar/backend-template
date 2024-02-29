@@ -1,8 +1,8 @@
 Scripts de automação: Mantenha scripts úteis para tarefas de automação, como migrações de banco de dados ou inicialização do servidor.
 
-Example of the code for scripts/migrateDatabase.js:
+Example of the code for scripts/migrateDatabase.ts:
 ```
-const databaseMigrator = require('../database/migrate');
+import databaseMigrator from '../database/migrate';
 
 async function migrateDatabase() {
   // Implement logic to migrate the database
