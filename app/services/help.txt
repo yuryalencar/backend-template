@@ -1,0 +1,1 @@
+Lógica de serviço: Se a lógica de serviço não se encaixa perfeitamente nos casos de uso, ela pode ser mantida aqui. Por exemplo, integrações com APIs externas ou serviços.

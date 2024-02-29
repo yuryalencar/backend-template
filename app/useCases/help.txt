@@ -1,0 +1,1 @@
+useCases: Coloque os casos de uso do seu aplicativo aqui. Cada caso de uso representa uma funcionalidade específica do seu aplicativo e encapsula a lógica de negócios correspondente.

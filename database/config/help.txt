@@ -1,0 +1,1 @@
+config: Armazene arquivos de configuração do banco de dados, como configurações de conexão e autenticação.
