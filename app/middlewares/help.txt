@@ -1,1 +1,0 @@
-middlewares: Armazene os middlewares do seu aplicativo aqui. Isso inclui middlewares para autenticação, autorização, manipulação de erros, entre outros.

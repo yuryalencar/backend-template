@@ -1,1 +1,0 @@
-Funções utilitárias: Armazene funções utilitárias reutilizáveis que podem ser usadas em diferentes partes do seu código.

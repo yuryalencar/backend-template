@@ -1,7 +1,6 @@
 endpoints: Este diretório pode conter módulos ou arquivos que lidam com as rotas da sua aplicação, definindo os pontos finais da API e chamando os controladores correspondentes.
 
-Sample of code for this directory:
-
+Example of the code for app/endpoints/users.js:
 ```
 const express = require('express');
 const router = express.Router();

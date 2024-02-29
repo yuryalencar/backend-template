@@ -1,1 +1,0 @@
-Constantes do aplicativo: Armazene constantes que são usadas em várias partes do código, como códigos de status HTTP, mensagens de erro, etc.

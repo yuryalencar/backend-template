@@ -1,1 +1,0 @@
-Documentação do projeto: Mantenha a documentação do projeto, seja ela gerada automaticamente ou escrita manualmente, neste diretório.
