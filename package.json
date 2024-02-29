@@ -6,19 +6,21 @@
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
-    "start:dev:full": "pnpm db:migrate && nodemon app/index.js",
-    "db:create": "npx sequelize-cli db:create",
-    "db:migrate": "npx sequelize-cli db:migrate",
-    "db:seed": "npx sequelize-cli db:seed --seed",
-    "db:seed:all": "npx sequelize-cli db:seed:all",
-    "db:restart": "pnpm run db:migrate && pnpm run db:seed:all",
+    "start:dev:full": "pnpm db:migrate && nodemon app/index.js", // #todo
+    "db:create": "npx sequelize-cli db:create", // #todo
+    "db:migrate": "npx sequelize-cli db:migrate", // #todo
+    "db:seed": "npx sequelize-cli db:seed --seed", // #todo
+    "db:seed:all": "npx sequelize-cli db:seed:all", // #todo
+    "db:restart": "pnpm run db:migrate && pnpm run db:seed:all", // #todo
     "start:prod": "pnpm run build && node build/index.js",
-    "start:prod:server": "pm2 start build --name backend-template-project"
+    "start:prod:server": "pm2 start build --name backend-template-project",
+    "start:prisma-studio": "npx prisma studio"
   },
-  "keywords": ["sequelize", "nodejs", "express", "vitest", "typescript"],
+  "keywords": ["prisma", "nodejs", "express", "vitest", "typescript"],
   "author": "Yury Alencar",
   "license": "MIT",
   "dependencies": {
+    "@prisma/client": "^5.10.2",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -32,6 +34,7 @@
     "@types/node": "^20.11.23",
     "@vitest/coverage-v8": "^1.3.1",
     "nodemon": "^3.1.0",
+    "prisma": "^5.10.2",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
